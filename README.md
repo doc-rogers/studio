@@ -22,20 +22,11 @@ Generate backgrounds. Overlay brand assets. Export composites.
 
 Cuarzos Studio is a **brand-aware design tool** that combines AI image generation with a layer-based compositor. Think Canva meets Figma, powered by Google's Nano Banana Pro model — with a constraint engine that ensures every output respects your brand.
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│   You type: "tropical sunset beach"                          │
-│                                                              │
-│   AI generates the background         → z: 0 (back)         │
-│   Your logo overlays on top           → z: 2 (front)        │
-│   Brand fonts and colors auto-apply   → constrained          │
-│   Export a pixel-perfect branded image → one click            │
-│                                                              │
-│   No design skills needed. The brand kit does the work.      │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+<img src="assets/studio-mockup.png" alt="Cuarzos Studio UI" width="720" />
+</div>
+
+> **You type a prompt.** The AI generates the background. Your logo overlays on top. Brand fonts and colors auto-apply. Export a pixel-perfect branded image in one click. No design skills needed.
 
 ---
 
@@ -89,18 +80,9 @@ graph TB
 
 The design surface is a z-ordered stack of three node types:
 
-```
-                    ┌─────────────────────────────┐
-  z: 4  (front)     │      🔲 Logo (SVG)          │  ← NEVER AI-generated
-                    │         Asset Node           │     Sacred. Locked.
-                    ├─────────────────────────────┤
-  z: 2              │      📝 "NOW LEASING"       │  ← Brand fonts + colors
-                    │         Text Node            │     Constrained by kit
-                    ├─────────────────────────────┤
-  z: 0  (back)      │      🖼️ Beach Sunset         │  ← AI-generated
-                    │         Image Node           │     Nano Banana Pro
-                    └─────────────────────────────┘
-```
+<div align="center">
+<img src="assets/layer-stack.png" alt="Layer Stack" width="480" />
+</div>
 
 | Node Type | Source | AI-Generated? | Constrained? |
 |-----------|--------|:-------------:|:------------:|
@@ -185,6 +167,10 @@ flowchart LR
 
 > **Free tier:** you tell the AI what to make.
 > **Premium tier:** the AI tells YOU what to make — based on what's working.
+
+<div align="center">
+<img src="assets/trend-intelligence.png" alt="Trend Intelligence" width="640" />
+</div>
 
 ```mermaid
 sequenceDiagram
