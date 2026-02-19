@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 Cuarzos Studio
+# Studio
 
 **AI-powered brand design tool.**
 Generate backgrounds. Overlay brand assets. Export composites.
